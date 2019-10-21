@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <title>Prueba Vue</title>
+</head>
+<body>
+  <div id="aplicacion">
+    Uso de un Input :
+    <input type="text" v-model="nombre">
+    <br>
+    <br>
+    Uso de text Area :
+    <textarea v-model="message"></textarea>
+    <br>
+    <br>
+    Uso de Checkbox : 
+    <input type="checkbox" v-model="checked">
+    <br>
+    <br>
+    Uso de radio:
+    <input type="radio" v-model="picked">
+    
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>   
+
+  <script>
+    var app=new Vue({
+      el: '#aplicacion',
+      data:{ 
+        nombre : 'ingrese su nombre',
+        message:'mensaje hecho para el textarea',
+        checked:true,
+        picked:true
+      }
+    })
+  </script>
+</body>
+</html>
